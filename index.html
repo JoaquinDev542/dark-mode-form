@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Form Dark Mode</title>
+</head>
+<body> 
+
+    <section class="form-container">
+
+        <div class="darkMode-container">
+        
+            <h1 class="title texts">Form DarkMode</h1>
+            
+            <img src="dark-mode.svg" alt="DarkMode Icon" class="dark-mode__icon" id="dark-mode__icon">
+    
+        </div>
+
+        <form class="form">
+
+            <div class="form-divisor form__email">
+                
+                <label for="input--email" class="form__text texts">Email</label>
+                <input type="email" class="input input--email">
+                <p class="form__paragraph-warm" id="email-warm"></p>
+    
+            </div>
+    
+            <div class="form-divisor form__password">
+    
+                <label for="input--password" class="form__text texts">Password</label>
+                <input type="password" class="input input--password">
+                <p class="form__paragraph-warm" id="password-warm"></p>
+                <span class="form__small-text texts">Include a number.</span>
+    
+            </div>
+    
+            <div class="form-divisor form__textarea">
+    
+                <label for="textarea" class="form__text texts">Message</label>
+                <textarea class="textarea"></textarea>
+                <p class="form__paragraph-warm" id="textarea-warm"></p>
+                <span class="form__small-text ">Must be at least 10 characters.</span>
+    
+            </div>
+    
+    
+            <hr class="hr">
+    
+            <button class="btn">Sumbit</button>
+    
+        </form>
+
+    </section>
+    
+
+    <script src="main.js"></script>
+</body>
+</html>
