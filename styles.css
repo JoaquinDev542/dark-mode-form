@@ -6,6 +6,7 @@
 
 :root {
     --violet: #4827EC ;
+    --violet-light: #5739ec ;
     --gray: #EFF0F0;
     --black:#0D1317;
     --white:#fff;
@@ -22,7 +23,7 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-.form {
+.form { 
     display: flex;
     flex-direction: column;
     width: 90%;
@@ -54,6 +55,10 @@ body {
 
 .input {
     padding: 5px 0 ;
+}
+
+.input:focus , .textarea:focus {
+    outline: 2px solid var(--violet , #4827EC);
 }
 
 .textarea {
@@ -119,4 +124,10 @@ body {
         padding: 16px 0;
     }
 
+}
+
+@media screen and (hover: hover) {
+    .btn:hover {
+        background-color: var(--violet-light , #5739ec);
+    }
 }
