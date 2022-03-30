@@ -58,7 +58,8 @@ body {
 }
 
 .input:focus , .textarea:focus {
-    outline: 2px solid var(--violet , #4827EC);
+    border: 2px solid var(--violet , #4827EC);
+    outline: none;
 }
 
 .textarea {
