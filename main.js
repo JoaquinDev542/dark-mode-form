@@ -27,11 +27,11 @@ $submit.addEventListener("click" , () => {
         $textarea.style.border = "2px solid red";
     }
 
-    if(regExEmail.test($emailInput.value) === true && regExPassword.test($passwordInput.value) === true && $textarea.value.length >= 9 ) {
-        document.write("a");
-    } else {
-        document.write("b");
-    }
+    //if(regExEmail.test($emailInput.value) === true && regExPassword.test($passwordInput.value) === true && $textarea.value.length >= 9 ) {
+      //  document.write("a");
+  //  } else {
+     //   document.write("b");
+  //  }
         
 
     
