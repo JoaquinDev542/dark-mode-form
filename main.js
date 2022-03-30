@@ -21,11 +21,19 @@ $submit.addEventListener("click" , () => {
         $passwordInput.style.border = "2px solid red";
     }
 
-    if($textarea.value.length <= 10) {
-        $textarea.style.border = "2px solid red";
-    } else {
+    if($textarea.value.length >= 9 ) {
         $textarea.style.border = "2px solid green";
+    } else {
+        $textarea.style.border = "2px solid red";
     }
+
+    if(regExEmail.test($emailInput.value) === true && regExPassword.test($passwordInput.value) === true && $textarea.value.length >= 9 ) {
+        document.write("a");
+    } else {
+        document.write("b");
+    }
+        
+
     
 })
 
