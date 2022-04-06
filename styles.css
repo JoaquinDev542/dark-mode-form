@@ -50,6 +50,10 @@ body {
     color: #000;
 }
 
+.darkMode__light:hover , .darkMode__dark:hover {
+    text-decoration: underline;
+}
+
 .darkMode__span {
     display: block;
 }
