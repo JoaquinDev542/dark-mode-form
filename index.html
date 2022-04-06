@@ -7,25 +7,35 @@
     <link rel="stylesheet" href="styles.css">
     <title>Form Dark Mode</title>
 </head>
-<body> 
+<body class="body"> 
 
      
     <form class="form">
-        
-        <h1 class="title">Form Legend</h1>
-        
+
+        <div class="darkMode-title-Container">
+            
+            <h1 class="title">Form Legend</h1>
+
+            <div class="darkMode">
+                <a href="#" class="darkMode__light">Light</a>
+                <span class="darkMode__span">/</span>
+                <a href="#" class="darkMode__dark">Dark</a>
+            </div>
+
+        </div>
+
         <div class="form-container">
             
             <div class="form__divisor form__email">
 
-                <label for="input-email" class="label">Email</label>
+                <label for="input-email" class="label label--email">Email</label>
                 <input id="input-email" type="email" class="input input--email">
 
             </div>
 
             <div class="form__divisor form__password">
 
-                <label for="input--password" class="label">Password</label>
+                <label for="input--password" class="label label--password">Password</label>
                 <input id="input--password" type="password" class="input input--password">
                 <span class="small-text">Include a number, special character , upperCase letter, lowerCase.</span>
 
@@ -33,9 +43,9 @@
 
             <div class="form__divisor form__message">
 
-                <label for="textarea" class="label">Message</label>
+                <label for="textarea" class="label label--textarea">Message</label>
                <textarea id="textarea" class="textarea"></textarea>
-               <span class="small-text">At least 10 characters.</span>
+               <span class=" small-text small-textLast">At least 10 characters.</span>
 
             </div>
 

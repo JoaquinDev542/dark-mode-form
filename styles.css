@@ -30,8 +30,34 @@ body {
     margin: 0 auto;
 }
 
+.darkMode-title-Container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.darkMode {
+    display: flex;
+    align-items: center;
+    padding: 1px;
+}
+
+.darkMode__light , .darkMode__dark {
+    display: block;
+    width: max-content;
+    padding: 2px;
+    text-decoration: none;
+    color: #000;
+}
+
+.darkMode__span {
+    display: block;
+}
+
 .title {
     font-size: 1.5rem;
+    background-color: transparent;
+
 }
 
 .form-container {
@@ -44,6 +70,7 @@ body {
     display: block;
     font-size: .90rem;
     margin-bottom: 5px;
+    color: #000;
 }
 
 .input , .textarea {
@@ -71,6 +98,7 @@ body {
     display: block;
     margin-top: 10px;
     font-size: .75rem;
+    color: #000;
 }
 
 .hr {
