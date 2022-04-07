@@ -1,5 +1,8 @@
 window.addEventListener("load" , function () {
 
+    const $preHeaderClose = document.querySelector(".preHeader__close");
+    const $preHeader = document.querySelector(".preHeader");
+
     const $darkModeLight = document.querySelector(".darkMode__light");
     const $darkModeDark = document.querySelector(".darkMode__dark");
 
@@ -19,8 +22,12 @@ window.addEventListener("load" , function () {
     const $textarea = document.querySelector(".textarea");
     const $submit = document.querySelector(".btn");
 
-const regExEmail = /^(([^<>()\[\]\\.,:\s@"]+(\.[^<>()\[\]\\.,:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-const regExPassword = /(?=(.*[0-9]))((?=.*[A-Za-z0-9])(?=.*[A-Z])(?=.*[a-z]))^.{8,}$/;
+    const regExEmail = /^(([^<>()\[\]\\.,:\s@"]+(\.[^<>()\[\]\\.,:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    const regExPassword = /(?=(.*[0-9]))((?=.*[A-Za-z0-9])(?=.*[A-Z])(?=.*[a-z]))^.{8,}$/;
+
+    $preHeaderClose.addEventListener("click" , ()=> {
+        $preHeader.classList.add("display");
+    })
 
 const functionDarkMode = function() {
     $darkModeDark.addEventListener("click" , () => {

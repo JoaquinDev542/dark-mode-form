@@ -15,12 +15,42 @@
 }
 
 body {
-    display: flex;
-    align-items: center;
-    height: 100vh;
     margin: 0;
     font-size: 16px;
     font-family: 'Open Sans', sans-serif;
+}
+
+.preHeader {
+    display: flex;
+    align-items: center ;
+    justify-content: center;
+    padding: 12px 0 ;
+    font-size: 14px;
+    background-color: var(--black , #0D1317 );
+}
+
+.preHeader.display {
+    display: none;
+}
+
+.preHeader__paragraph {
+    text-align: center;
+    margin: 0 auto;
+    padding-left: 20px;
+    line-height: 1.5;
+    color: var(--white , #fff);
+}
+
+.preHeader__link , .preHeader__close {
+    display: inline-block;
+    color: var(--white , #fff);
+}
+
+.preHeader__close {
+    padding: 0 20px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
 }
 
 .form { 
@@ -61,7 +91,6 @@ body {
 .title {
     font-size: 1.5rem;
     background-color: transparent;
-
 }
 
 .form-container {
