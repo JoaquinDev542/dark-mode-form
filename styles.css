@@ -57,7 +57,19 @@ body {
     display: flex;
     flex-direction: column;
     width: 90%;
-    margin: 0 auto;
+    margin: 50px auto 0 auto;
+}
+
+.info__success , .info__error{
+    display: none;
+}
+
+.info__success.display {
+    display: flex;
+}
+
+.info__error.display {
+    display: flex;
 }
 
 .darkMode-title-Container {
