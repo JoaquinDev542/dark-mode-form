@@ -91,17 +91,18 @@ $submit.addEventListener("click" , () => {
     }
 
     if(regExEmail.test($emailInput.value) === true && regExPassword.test($passwordInput.value) === true && $textarea.value.length >= 9 ) {
-        alert("El formulario se ha completado correctamente");
 
         $infoSuccess.classList.add("display");
+        $infoError.classList.remove("display");
+
 
         $emailInput.value = "";
         $passwordInput.value = "";
         $textarea.value = "";
 
     } else {
-        alert("El formulario NO se ha completado. Por favor, complete todo los inputs con borde rojo.");
-        
+    
+        $infoSuccess.classList.remove("display");
         $infoError.classList.add("display");
 
    }

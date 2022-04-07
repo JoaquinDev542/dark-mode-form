@@ -11,6 +11,9 @@
     --black:#0D1317;
     --white:#fff;
 
+    --green:#e0f5e1;
+    --red:#facfdc;
+
     --bg-input:#eff0f0;
 }
 
@@ -64,12 +67,22 @@ body {
     display: none;
 }
 
-.info__success.display {
+.info__success.display , .info__error.display {
     display: flex;
+    padding: 8px 25px;
+    border-radius: 3px;
+}
+
+.info__success.display {
+    background-color: var(--green , #EFF0F0);
 }
 
 .info__error.display {
-    display: flex;
+    background-color: var(--red , #facfdc);
+}
+
+.info__span {
+    font-weight: bold;
 }
 
 .darkMode-title-Container {
