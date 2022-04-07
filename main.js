@@ -1,31 +1,38 @@
 window.addEventListener("load" , function () {
 
+    // PreHeader Elements
     const $preHeaderClose = document.querySelector(".preHeader__close");
     const $preHeader = document.querySelector(".preHeader");
 
+    // Info Elements
+    const $infoError = document.querySelector(".info__error");
+    const $infoSuccess = document.querySelector(".info__success");
+
+    // DarkMode Elements
     const $darkModeLight = document.querySelector(".darkMode__light");
     const $darkModeDark = document.querySelector(".darkMode__dark");
 
+    // Elements 
     const $body = document.body;
     const $title = document.querySelector(".title");
     const $darkModeSpan = document.querySelector(".darkMode__span");
 
+    // Labels Elements
     const $labelEmail = document.querySelector(".label--email");
     const $labelPassword = document.querySelector(".label--password");
     const $labelTextarea = document.querySelector(".label--textarea");
 
+    // SmallTexts Elements
     const $smallText = document.querySelector(".small-text");
     const $smallTextLast = document.querySelector(".small-textLast");
 
+    // Inputs Elements
     const $emailInput = document.querySelector(".input--email");
     const $passwordInput = document.querySelector(".input--password");
     const $textarea = document.querySelector(".textarea");
     const $submit = document.querySelector(".btn");
 
-    const $infoError = document.querySelector(".info__error");
-    const $infoSuccess = document.querySelector(".info__success");
-
-
+    // RegEx Const
     const regExEmail = /^(([^<>()\[\]\\.,:\s@"]+(\.[^<>()\[\]\\.,:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     const regExPassword = /(?=(.*[0-9]))((?=.*[A-Za-z0-9])(?=.*[A-Z])(?=.*[a-z]))^.{8,}$/;
 
@@ -34,6 +41,7 @@ window.addEventListener("load" , function () {
     })
 
 const functionDarkMode = function() {
+
     $darkModeDark.addEventListener("click" , () => {
         // BackgroundColor
         $body.style.backgroundColor = ("#0D1317");
@@ -48,7 +56,6 @@ const functionDarkMode = function() {
         $labelTextarea.style.color = "#fff"; 
         $smallText.style.color = "#fff";
         $smallTextLast.style.color = "#fff";
-
     })
 
     $darkModeLight.addEventListener("click" , () => {
@@ -65,7 +72,6 @@ const functionDarkMode = function() {
         $labelTextarea.style.color = "#0D1317"; 
         $smallText.style.color = "#0D1317";
         $smallTextLast.style.color = "#0D1317";
-
     })
 }
 functionDarkMode();
@@ -95,7 +101,6 @@ $submit.addEventListener("click" , () => {
         $infoSuccess.classList.add("display");
         $infoError.classList.remove("display");
 
-
         $emailInput.value = "";
         $passwordInput.value = "";
         $textarea.value = "";
@@ -105,7 +110,7 @@ $submit.addEventListener("click" , () => {
         $infoSuccess.classList.remove("display");
         $infoError.classList.add("display");
 
-   }
+    }
 
 })
 
